@@ -1,101 +1,98 @@
 import Image from "next/image";
+import ImagePNG from "../app/image.png";
+import { AiFillSecurityScan } from "react-icons/ai";
+import { FaCheckDouble } from "react-icons/fa6";
+import { FaStar } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="items-center flex flex-col space-y-10 p-10">
+      <h1 className="text-4xl text-center ">
+        <p className=" font-bold"> Freelancer de Elite:</p>
+        Conquiste projetos e cobre no mínimo R$1000
+      </h1>
+      <Image src={ImagePNG} className="w-3/4 h-full pb-4 lg:w-[30%]" />
+      <a href="https://go.hotmart.com/P98549650B?dp=1" className="cursor-pointer hover:scale-110 transition-all p-5 px-8 bg-green-600 font-semibold">
+        GARANTA MEU SUCESSO
+      </a>
+      <h2>
+        <div>
+          <h2 class="font-bold text-3xl my-4">SOBRE O CONTEÚDO</h2>
+          <p>
+            💼 <strong>Transforme suas habilidades em faturamento real!</strong>{" "}
+            Com o <strong>Freelancer de Elite</strong>, você terá acesso a um
+            método completo para fechar projetos lucrativos e cobrar no{" "}
+            <strong>mínimo R$1000 por serviço</strong>.
+          </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <h3 class="font-bold text-xl mt-4">🚀 O que você vai aprender?</h3>
+          <ul class="list-disc pl-5">
+            <li>✅ Como atrair e conquistar clientes de forma estratégica</li>
+            <li>
+              ✅ Dominar contratos e precificação para valorizar seu trabalho
+            </li>
+            <li>
+              ✅ Criar um planejamento de prospecção eficiente e previsível
+            </li>
+            <li>
+              ✅ Utilizar um framework poderoso para calls de venda que
+              convertem
+            </li>
+            <li>
+              ✅ Acessar uma biblioteca exclusiva de{" "}
+              <strong>landing pages no Figma</strong> para impressionar clientes
+            </li>
+          </ul>
+
+          <p class="mt-4">
+            🎯{" "}
+            <strong>
+              Além de tudo isso, você vai aprender como se posicionar no mercado
+              e construir uma base sólida de clientes que pagam bem pelo seu
+              serviço!
+            </strong>
+          </p>
+
+          <p class="mt-4">
+            Chega de depender de indicações ou passar perrengue com negociações
+            ruins. Com esse conteúdo, você terá{" "}
+            <strong>
+              um passo a passo claro para transformar cada oportunidade em
+              dinheiro no bolso
+            </strong>
+            . 🚀🔥
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+      </h2>
+      <div className=" border-y-2 border-gray-800 py-10 mt-28">
+      <div className="flex flex-col space-y-8 text-center items-center w-full ">
+        <p className="flex font-bold text-2xl">
+          Aproveite o conteúdo em qualquer dispositivo.
+        </p>
+        <p className="flex text-center items-center">
+          <FaCheckDouble className=" mr-2 text-green-700" />
+          Seus dados pessoais são confidenciais
+        </p>
+
+        <p className="flex  text-center items-center">
+          <AiFillSecurityScan className="mr-2 text-green-700" />
+          Compra 100% segura
+        </p>
+
+        <p className="flex  text-center items-center">
+          <FaStar className="mr-2 text-green-700" />
+          Garantia: seu dinheiro de volta sem perguntas
+        </p>
+      </div>
+      </div>
+      <span className="mb-20 space-y-8 text-center items-center flex flex-col">
+        <p>por apenas</p>
+        <p className="text-5xl font-bold">R$60,00</p>
+        <a href="https://go.hotmart.com/P98549650B?dp=1" className=" mb-4 cursor-pointer hover:scale-110 transition-all p-5 px-8 bg-green-600 font-semibold">
+          GARANTA MEU SUCESSO
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <p className="text-xs">PAGAMENTO 100% SEGURO COM ACESSO IMEDIATO</p>
+      </span>
     </div>
   );
 }
