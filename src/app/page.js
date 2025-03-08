@@ -3,6 +3,7 @@ import ImagePNG from "../app/image.png";
 import { AiFillSecurityScan } from "react-icons/ai";
 import { FaCheckDouble } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       </a>
       <h2>
         <div>
-          <h2 class="font-bold text-3xl my-4">SOBRE O CONTEÚDO</h2>
+          <h2 className="font-bold text-3xl my-4">SOBRE O CONTEÚDO</h2>
           <p>
             💼 <strong>Transforme suas habilidades em faturamento real!</strong>{" "}
             Com o <strong>Freelancer de Elite</strong>, você terá acesso a um
@@ -25,8 +26,8 @@ export default function Home() {
             <strong>mínimo R$1000 por serviço</strong>.
           </p>
 
-          <h3 class="font-bold text-xl mt-4">🚀 O que você vai aprender?</h3>
-          <ul class="list-disc pl-5">
+          <h3 className="font-bold text-xl mt-4">🚀 O que você vai aprender?</h3>
+          <ul className="list-disc pl-5">
             <li>✅ Como atrair e conquistar clientes de forma estratégica</li>
             <li>
               ✅ Dominar contratos e precificação para valorizar seu trabalho
@@ -44,7 +45,7 @@ export default function Home() {
             </li>
           </ul>
 
-          <p class="mt-4">
+          <p className="mt-4">
             🎯{" "}
             <strong>
               Além de tudo isso, você vai aprender como se posicionar no mercado
@@ -53,7 +54,7 @@ export default function Home() {
             </strong>
           </p>
 
-          <p class="mt-4">
+          <p className="mt-4">
             Chega de depender de indicações ou passar perrengue com negociações
             ruins. Com esse conteúdo, você terá{" "}
             <strong>
@@ -74,14 +75,14 @@ export default function Home() {
           Seus dados pessoais são confidenciais
         </p>
 
-        <p className="flex  text-center items-center">
+        <p className="flex text-center items-center">
           <AiFillSecurityScan className="mr-2 text-green-700" />
           Compra 100% segura
         </p>
 
-        <p className="flex  text-center items-center">
-          <FaStar className="mr-2 text-green-700" />
-          Garantia: seu dinheiro de volta sem perguntas
+        <p className="flex text-center items-center">
+          <FaStar className=" mr-2 text-green-700" />
+          Seu dinheiro de volta sem perguntas
         </p>
       </div>
       </div>
@@ -93,6 +94,24 @@ export default function Home() {
         </a>
         <p className="text-xs">PAGAMENTO 100% SEGURO COM ACESSO IMEDIATO</p>
       </span>
+      <div className="group relative bg-green-700">
+  <a
+    className="bg-green-700 hover:w-14 hover:h-14 hover:bg-Blue_Primary transition-all flex justify-center text-3xl
+      m-6 rounded-full items-center w-12 h-12 shadow-black shadow-lg bg-Blue_Primary
+      fixed bottom-0 z-20 right-0"
+    href="https://wa.me/558199049803?text=Olá,%20vim%20do%20Freelancer%20de%20Elite%20e%20gostaria%20de%20tirar%20uma%20dúvida!"
+  >
+    <IoLogoWhatsapp />
+  </a>
+  <a
+    className="bg-green-700 block sm:hidden group-hover:block text-xs fixed bottom-8 px-6 py-2 z-10 right-16
+      bg-Blue_Primary"
+    href="https://wa.me/558199049803?text=Olá,%20vim%20do%20Freelancer%20de%20Elite%20e%20gostaria%20de%20tirar%20uma%20dúvida!"
+  >
+    <span className="pr-2">TIRAR DÚVIDAS</span>
+  </a>
+</div>
+
     </div>
   );
 }
